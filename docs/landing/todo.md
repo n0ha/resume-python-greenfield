@@ -3,7 +3,7 @@
 - Product framing
   - Confirm audience and promise from docs/landing/landing-page.md and docs/minimal-product.md.
   - Decide brand tone (calm, efficient, privacy-first) and key proof points to emphasize in hero and trust badges.
-  - **AI prompt — name**: “You are a brand strategist. Generate 12 short, globally pronounceable product names for an ATS-friendly CV tailoring tool priced at €/$0.99. Requirements: 2 syllables preferred, avoid clichés like ‘resume AI’, convey speed + precision, .com availability likely. Return table: Name, Rationale (<=12 words), Domain likelihood note.”
+- **AI prompt — name**: “You are a brand strategist. Generate 12 short, globally pronounceable platform-ready product names for an ATS-friendly CV tailoring tool priced at $0.99 for the starter export with future subscriptions. Requirements: 2 syllables preferred, avoid clichés like ‘resume AI’, convey speed + precision + trust, .com availability likely. Return table: Name, Rationale (<=12 words), Domain likelihood note.”
 
 - Visual identity and assets
   - Lock primary/secondary colors, neutrals, and background treatment; pick typography stack.
@@ -17,7 +17,7 @@
   - Finalize hero headline/subheadline, CTA labels, trust badge text (ATS-friendly, No signup to preview, Privacy-first).
   - Draft “How it works” 3-step copy, “Why it works” value props, Sample snippet text, Pricing line, and FAQ entries from landing-page.md.
   - Prepare sample CV snippet text that matches ATS tone and shows one experience entry.
-  - Set SEO text: title, meta description, keywords; match Open Graph title/description.
+  - Set SEO text: title, meta description, keywords; match Open Graph title/description; use $0.99 consistently (no dual currency).
 
 - Layout and UX
   - Wireframe sections in order: Hero → How it works → Why it works → Sample snippet → Pricing → FAQ → Footer.

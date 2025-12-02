@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sample — ATS‑Friendly CV Tailor</title>
+    <meta name="description" content="Sample snippet of the tailored CV and cover letter." />
+    <style>
+      :root { --bg:#0b0c10; --text:#e6e6e6; --muted:#b8b8b8; --brand:#3aa0ff; --card:#121317; --border:#1e2026; }
+      body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: var(--bg); color: var(--text); }
+      .container { max-width: 900px; margin: 0 auto; padding: 24px; }
+      a { color: var(--brand); text-decoration: none; }
+      .card { background: var(--card); border:1px solid var(--border); border-radius: 12px; padding: 16px; margin: 14px 0; }
+      .muted { color: var(--muted); }
+      .watermark { position:relative; }
+      .watermark::after { content:'PREVIEW'; position:absolute; inset:0; display:flex; align-items:center; justify-content:center; color:#fff; opacity:.06; font-weight:900; font-size:4rem; letter-spacing:.2rem; pointer-events:none; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p><a href="index.html">← Back</a></p>
+      <h1>Sample Snippet</h1>
+      <div class="card watermark">
+        <h3>Summary</h3>
+        <p class="muted">Senior Backend Engineer (8+ years) specializing in Python and cloud services. Delivered resilient APIs at scale, mentored teams, and improved reliability with observability‑driven practices. Focused on impact, clarity, and iterative delivery.</p>
+        <h3>Experience</h3>
+        <p><strong>Lead Backend Engineer</strong> — Acme Corp (2021–Present)</p>
+        <ul>
+          <li>Re‑architected payments API (Python, FastAPI, Postgres), reducing error rate by 35%.</li>
+          <li>Led 5 engineers, introduced code health guardrails and incident reviews.</li>
+          <li>Aligned delivery with business goals using measurable success criteria.</li>
+        </ul>
+      </div>
+
+      <h2>Cover Letter (Example)</h2>
+      <div class="card">
+        <p class="muted">Dear Hiring Team,</p>
+        <p class="muted">I’m excited to apply for the role at your company. My background in backend engineering, with a focus on Python, APIs, and cloud services, aligns closely with the responsibilities described in the posting. In my current role, I’ve led initiatives improving reliability, performance, and developer experience, and I enjoy working closely with stakeholders to deliver measurable outcomes.</p>
+        <p class="muted">I’d welcome the opportunity to discuss how I can contribute to your team. Thank you for your time and consideration.</p>
+        <p class="muted">Sincerely,<br/>Your Name</p>
+      </div>
+    </div>
+  </body>
+  </html>
+

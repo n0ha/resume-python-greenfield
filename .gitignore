@@ -1,0 +1,9 @@
+venv
+**/__pycache__
+out/
+.aider*
+.envrc
+.resume-cli-context
+db.sqlite3
+db.sqlite3.backup
+.envrc

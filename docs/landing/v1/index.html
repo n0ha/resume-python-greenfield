@@ -3,57 +3,92 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ATS‑Friendly CV Tailor — Free Preview, €/$0.99 PDF</title>
-    <meta name="description" content="Paste your CV and a job ad. Review suggested edits by section. Get an ATS‑friendly PDF CV and a cover letter for just €/$0.99." />
-    <meta property="og:title" content="ATS‑Friendly CV Tailor — Free Preview, €/$0.99 PDF" />
-    <meta property="og:description" content="Paste your CV and a job ad. Review suggested edits by section. Get an ATS‑friendly PDF CV and a cover letter for just €/$0.99." />
+    <title>Zyvi — Tailor your CV to pass the filter | First CV Free</title>
+    <meta name="description" content="Zyvi parses your CV and a job ad, aligns sections to pass ATS filters, and delivers your first tailored CV + cover letter free; subscribe for ongoing exports." />
+    <meta property="og:title" content="Zyvi — Tailor your CV to pass the filter | First CV Free" />
+    <meta property="og:description" content="Zyvi parses your CV and a job ad, aligns sections to pass ATS filters, and delivers your first tailored CV + cover letter free; subscribe for ongoing exports." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/assets/og-image.png" />
+    <meta property="og:image" content="assets/preview.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Ctext x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='34' fill='%23fff'%3ECV%3C/text%3E%3C/svg%3E" />
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="canonical" href="/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-      :root { --bg:#0b0c10; --text:#e6e6e6; --muted:#b8b8b8; --brand:#3aa0ff; --ok:#27ae60; --card:#121317; --border:#1e2026; }
+      :root { --bg:#131e26; --text:#e9e9e8; --muted:#969695; --brand:#10e7b3; --brand2:#3aa0ff; --ok:#10e7b3; --warn:#f97316; --card:#111827; --border:#1f2937; }
       * { box-sizing: border-box; }
-      body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: var(--bg); color: var(--text); }
-      .container { max-width: 980px; margin: 0 auto; padding: 24px; }
-      header { padding: 56px 0 24px; }
-      h1 { font-size: 2.2rem; margin: 0 0 12px; letter-spacing: -0.02em; }
-      p.lead { font-size: 1.1rem; color: var(--muted); margin: 0 0 16px; }
+      body { margin:0; font-family: "Space Grotesk", Inter, -apple-system, "Segoe UI", system-ui, sans-serif; background: radial-gradient(circle at 20% 20%, rgba(58,160,255,0.05), transparent 35%), radial-gradient(circle at 80% 10%, rgba(16,231,179,0.05), transparent 30%), var(--bg); color: var(--text); }
+      img { max-width: 100%; height: auto; display: block; }
+      .container { max-width: 1200px; margin: 0 auto; padding: 24px; }
+      .topbar { display:flex; align-items:center; justify-content:space-between; padding: 18px 0 10px; }
+      .brand { display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:-0.01em; color: var(--text); text-decoration: none; }
+      .brand img { width: 130px; height: auto; filter: drop-shadow(0 8px 20px rgba(0,0,0,0.3)); }
+      header { padding: 24px 0 20px; }
+      .hero-grid { display:grid; grid-template-columns: minmax(0,1.05fr) minmax(0,0.95fr); gap: 40px; align-items:center; }
+      h1 { font-size: 2.8rem; margin: 0 0 14px; letter-spacing: -0.02em; }
+      p.lead { font-size: 1.12rem; color: var(--muted); margin: 0 0 20px; max-width: 760px; }
       .ctas { display:flex; gap:12px; flex-wrap: wrap; margin: 16px 0 10px; }
-      .btn { appearance:none; border:1px solid var(--border); background: var(--brand); color:#000; font-weight: 700; padding: 12px 16px; border-radius: 10px; text-decoration:none; display:inline-block; }
+      .btn { appearance:none; border:1px solid transparent; background: var(--brand); color:#041017; font-weight: 700; padding: 13px 18px; border-radius: 12px; text-decoration:none; display:inline-block; transition: transform .08s ease, box-shadow .08s ease, background .08s ease; }
+      .btn:hover { transform: translateY(-1px); box-shadow: 0 10px 30px rgba(16,231,179,0.22); }
       .btn.secondary { background: transparent; color: var(--text); border-color: var(--border); }
+      .btn.secondary:hover { border-color: var(--brand2); color: var(--brand2); }
       .badges { display:flex; gap:8px; flex-wrap: wrap; margin-top: 14px; }
-      .badge { background: var(--card); color: var(--muted); border:1px solid var(--border); padding: 6px 10px; border-radius: 999px; font-size: 0.85rem; }
-      section { padding: 26px 0; border-top:1px solid var(--border); }
-      h2 { font-size: 1.5rem; margin: 0 0 12px; }
-      .grid { display:grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-      .card { background: var(--card); border:1px solid var(--border); border-radius: 12px; padding: 16px; }
+      .badge { background: #0f1822; color: var(--muted); border:1px solid #1f2a38; padding: 6px 10px; border-radius: 999px; font-size: 0.85rem; }
+      section { padding: 32px 0; border-top:1px solid var(--border); }
+      h2 { font-size: 1.6rem; margin: 0 0 14px; }
+      .grid { display:grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+      .card { background: #0f1822; border:1px solid #1f2a38; border-radius: 14px; padding: 16px; box-shadow: 0 12px 30px rgba(0,0,0,0.18); }
       .muted { color: var(--muted); }
-      .pricing { font-size: 1.1rem; font-weight: 600; }
-      .sample { position: relative; }
+      .pricing { font-size: 1.05rem; font-weight: 600; line-height: 1.5; }
+      .sample { position: relative; overflow:hidden; }
       .watermark { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; pointer-events:none; opacity:0.08; font-weight:900; font-size: 4rem; letter-spacing: .2rem; }
-      footer { padding: 28px 0 60px; border-top:1px solid var(--border); color: var(--muted); font-size: 0.95rem; }
-      footer a { color: var(--muted); text-decoration: none; margin-right: 12px; }
-      @media (max-width: 880px) { .grid { grid-template-columns: 1fr; } }
+      .sample-grid { display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:18px; }
+      .sample-img { border-radius: 10px; border:1px solid var(--border); background: #0f1721; }
+      .faq-grid { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:14px; }
+      .faq-item summary { cursor: pointer; list-style: none; font-weight: 700; color: var(--text); }
+      .faq-item summary::-webkit-details-marker { display: none; }
+      .faq-item p { margin: 10px 0 0; }
+      footer { padding: 28px 0 60px; border-top:1px solid var(--border); color: var(--muted); font-size: 0.95rem; display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between; }
+      footer .links a { color: var(--muted); text-decoration: none; margin-right: 12px; }
+      @media (max-width: 1100px) {
+        .container { padding: 20px; }
+        .hero-grid { grid-template-columns: 1fr; gap: 28px; }
+        h1 { font-size: 2.5rem; }
+      }
+      @media (max-width: 880px) { .grid { grid-template-columns: 1fr; } .faq-grid { grid-template-columns: 1fr; } .sample-grid { grid-template-columns: 1fr; } }
     </style>
   </head>
   <body>
     <div class="container">
+      <div class="topbar">
+        <a class="brand" href="index.html" aria-label="Zyvi home">
+          <img src="assets/logo.png" alt="Zyvi logo" />
+        </a>
+      </div>
       <header>
-        <h1>Tailor your CV to any job ad — in minutes</h1>
-        <p class="lead">ATS‑friendly and recruiter‑ready. Free preview, €/$0.99 to download.</p>
-        <div class="ctas">
-          <a class="btn" href="paste.html" id="cta-preview">Try free preview</a>
-          <a class="btn secondary" href="sample.html" id="cta-sample">See sample CV + letter</a>
-        </div>
-        <div class="badges">
-          <span class="badge">ATS‑friendly</span>
-          <span class="badge">No signup to preview</span>
-          <span class="badge">Privacy‑first</span>
+        <div class="hero-grid">
+          <div>
+            <h1>Tailor your CV to any job ad — in minutes</h1>
+            <p class="lead">Zyvi parses your CV + job ad to pass ATS filters. First tailored CV free; subscribe for more.</p>
+            <div class="ctas">
+              <a class="btn" href="paste.html" id="cta-preview">Try free preview</a>
+              <a class="btn secondary" href="sample.html" id="cta-sample">See sample CV + letter</a>
+            </div>
+            <div class="badges">
+              <span class="badge">ATS‑friendly</span>
+              <span class="badge">First CV free</span>
+              <span class="badge">No signup to preview</span>
+              <span class="badge">Privacy‑first</span>
+            </div>
+          </div>
+          <div>
+            <img src="assets/hero.png" alt="Hero illustration: Zyvi tailoring a CV to match a job ad" loading="lazy" />
+          </div>
         </div>
       </header>
 
-      <section aria-labelledby="how">
+      <section aria-labelledby="how" data-analytics="view_how_it_works">
         <h2 id="how">How it works</h2>
         <div class="grid">
           <div class="card">
@@ -66,61 +101,89 @@
           </div>
           <div class="card">
             <strong>3) Preview & Download</strong>
-            <p class="muted">See the cover letter and a CV snippet. Pay €/$0.99 to download the full PDF.</p>
+            <p class="muted">See the cover letter and a CV snippet. Download your first tailored CV free; subscribe for additional tailored CVs.</p>
           </div>
         </div>
       </section>
 
-      <section aria-labelledby="why">
+      <section aria-labelledby="why" data-analytics="view_why">
         <h2 id="why">Why it works</h2>
         <div class="grid">
           <div class="card"><strong>ATS‑friendly</strong><p class="muted">Single column, clear headings, consistent dates, keyword‑aware.</p></div>
+          <div class="card"><strong>Aligned</strong><p class="muted">Zyvi parses your job ad to align keywords without breaking ATS parsing.</p></div>
           <div class="card"><strong>Control</strong><p class="muted">Approve/reject edits per section; no new facts added.</p></div>
           <div class="card"><strong>Quality</strong><p class="muted">Polished PDF and a concise 3‑paragraph cover letter.</p></div>
         </div>
       </section>
 
-      <section aria-labelledby="sample">
+      <section aria-labelledby="sample" data-analytics="view_sample_section">
         <h2 id="sample">Sample snippet</h2>
-        <div class="card sample">
-          <div class="watermark">PREVIEW</div>
-          <div>
-            <h3 style="margin:0 0 8px;">Summary</h3>
-            <p class="muted" style="margin-top:0;">Senior Backend Engineer (8+ years) specializing in Python and cloud services. Delivered resilient APIs at scale, mentored teams, and improved reliability with observability‑driven practices. Focused on impact, clarity, and iterative delivery.</p>
-            <h3 style="margin:16px 0 8px;">Experience</h3>
-            <p style="margin:0;"><strong>Lead Backend Engineer</strong> — Acme Corp (2021–Present)</p>
-            <ul style="margin:6px 0 0 18px;">
-              <li>Re‑architected payments API (Python, FastAPI, Postgres), reducing error rate by 35%.</li>
-              <li>Led 5 engineers, introduced code health guardrails and incident reviews.</li>
-              <li>Aligned delivery with business goals using measurable success criteria.</li>
-            </ul>
+        <div class="sample-grid">
+          <div class="card sample">
+            <div class="watermark">PREVIEW</div>
+            <div>
+              <h3 style="margin:0 0 8px;">Summary</h3>
+              <p class="muted" style="margin-top:0;">Senior Backend Engineer focused on Python APIs and cloud services. Aligns delivery to business impact, builds resilient systems, and collaborates across teams.</p>
+              <h3 style="margin:16px 0 8px;">Experience</h3>
+              <p style="margin:0;"><strong>Lead Backend Engineer</strong> — Acme Corp (2021–Present)</p>
+              <ul style="margin:6px 0 0 18px;">
+                <li>Re‑architected payments API (Python, FastAPI, Postgres); cut error rate by 35%.</li>
+                <li>Led 5 engineers; added observability and incident reviews to stabilize releases.</li>
+                <li>Matched roadmap to revenue goals; shipped milestones on-time with measurable impact.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card sample-img">
+            <img src="assets/preview.png" alt="Zyvi preview of tailored CV snippet" loading="lazy" />
           </div>
         </div>
       </section>
 
-      <section aria-labelledby="pricing">
+      <section aria-labelledby="pricing" data-analytics="view_pricing">
         <h2 id="pricing">Pricing</h2>
         <div class="card">
-          <p class="pricing">€/$0.99 per export — includes CV PDF and a tailored cover letter. No subscriptions.</p>
+          <p class="pricing"><strong>Free:</strong> First tailored CV for one job ad, includes cover letter.<br/><strong>Plus:</strong> Multiple tailored CVs per month + saved profile (details coming soon).<br/><strong>Pro:</strong> Higher limits/unlimited within fair use + priority rendering (details coming soon).</p>
         </div>
       </section>
 
-      <section aria-labelledby="faq">
+      <section aria-labelledby="faq" data-analytics="view_faq">
         <h2 id="faq">FAQ</h2>
-        <div class="grid">
-          <div class="card"><strong>Will you invent skills?</strong><p class="muted">No. We only rephrase/reorder what’s already in your CV.</p></div>
-          <div class="card"><strong>Is my data safe?</strong><p class="muted">Preview requires no signup; we store minimal data to power your session.</p></div>
-          <div class="card"><strong>Languages?</strong><p class="muted">English only for v0.</p></div>
-          <div class="card"><strong>CV Length?</strong><p class="muted">Up to 2 pages; older roles may be hidden to fit.</p></div>
-          <div class="card"><strong>Refunds?</strong><p class="muted">If the PDF fails to render or is unusable, contact support.</p></div>
+        <div class="faq-grid">
+          <details class="card faq-item" open>
+            <summary>Will you invent skills?</summary>
+            <p class="muted">No. We only rephrase/reorder what’s already in your CV.</p>
+          </details>
+          <details class="card faq-item">
+            <summary>Why subscribe after the free CV?</summary>
+            <p class="muted">Subscriptions cover ongoing tailored CVs and cover letters across multiple job ads.</p>
+          </details>
+          <details class="card faq-item">
+            <summary>Is my data safe?</summary>
+            <p class="muted">Preview requires no signup; we store minimal data to power your session.</p>
+          </details>
+          <details class="card faq-item">
+            <summary>Languages?</summary>
+            <p class="muted">English only for v0.</p>
+          </details>
+          <details class="card faq-item">
+            <summary>CV Length?</summary>
+            <p class="muted">Up to 2 pages; older roles may be hidden to fit.</p>
+          </details>
+          <details class="card faq-item">
+            <summary>Refunds?</summary>
+            <p class="muted">If the PDF fails to render or is unusable, contact support.</p>
+          </details>
         </div>
       </section>
 
       <footer>
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-        <a href="#">Contact</a>
-        <span style="float:right;">© <span id="year"></span> CV Tailor</span>
+        <div class="links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Contact</a>
+          <a href="#">Imprint</a>
+        </div>
+        <span>© <span id="year"></span> Zyvi</span>
       </footer>
     </div>
     <script>
@@ -128,7 +191,15 @@
       const log = (name) => () => { try { console.log('analytics', name); } catch (_) {} };
       document.getElementById('cta-preview').addEventListener('click', log('cta_click_preview'));
       document.getElementById('cta-sample').addEventListener('click', log('view_sample'));
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('data-analytics');
+            if (id) { log(id)(); observer.unobserve(entry.target); }
+          }
+        });
+      }, { threshold: 0.35 });
+      document.querySelectorAll('[data-analytics]').forEach(el => observer.observe(el));
     </script>
   </body>
   </html>
-

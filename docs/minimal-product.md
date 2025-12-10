@@ -1,5 +1,7 @@
 # Minimal Product (v0) — Job‑Seeker CV Tailoring
 
+Brand: **Zyvi** — “Tailor your CV to pass the filter.”
+
 A minimal, compelling product for tech job seekers to generate an ATS‑friendly tailored CV PDF (up to 2 pages) and a concise cover letter from pasted text, with a lightweight paywall.
 
 ---
@@ -11,7 +13,7 @@ A minimal, compelling product for tech job seekers to generate an ATS‑friendly
 ## Core Outcome
 
 - Tailored CV PDF (ATS‑friendly, single column, up to 2 pages) + concise 3‑paragraph cover letter aligned to one pasted job ad.
-- Price: 0.99 USD/EUR per export (Stripe Checkout). English only.
+- Pricing: First tailored CV free (covers 1 job ad). Additional exports require a subscription (tiers: Free, Plus, Pro; details TBD, USD). English only.
 
 ## Inputs (v0)
 
@@ -43,13 +45,14 @@ A minimal, compelling product for tech job seekers to generate an ATS‑friendly
 
 1. Paste: user pastes CV + job ad → Continue.
 2. Review: section‑by‑section approve/reject (Summary, Skills, each Experience entry).
-3. Preview: show cover letter (full) + CV snippet → “Get PDF for €/$0.99”.
-4. Pay: Stripe Checkout → Success page with immediate download and 24‑hour re‑download link via email.
+3. Preview: show cover letter (full) + CV snippet → “Get PDF” (first PDF free).
+4. Pay/Upgrade: For subsequent PDFs, require subscription checkout → Success page with immediate download and 24‑hour re‑download link via email.
 
 ## Access & Paywall
 
 - Anonymous until paywall: users can preview and copy the cover letter without login.
-- Paywall: CV PDF export behind Stripe Checkout; Stripe collects email; success page allows download; email includes 24‑hour link.
+- Free export: first tailored CV + cover letter for one job ad is free to download.
+- Paywall: additional CV exports require subscription checkout; Stripe collects email; success page allows download; email includes 24‑hour link.
 
 ## Abuse Controls (Lightweight)
 
@@ -78,4 +81,3 @@ A minimal, compelling product for tech job seekers to generate an ATS‑friendly
 - Contact details are present in pasted CV; no extra forms in v0.
 - Company/role names are extracted from job ad when confident; otherwise neutral phrasing is used.
 - One job ad per run; single pass (no regenerate).
-

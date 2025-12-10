@@ -1,6 +1,6 @@
 # Landing Page — Minimal Product (v0)
 
-A focused landing page that clearly communicates value, builds trust, and drives users into the paste → review → preview flow with minimal friction.
+A focused landing page for **Zyvi** that clearly communicates value, builds trust, and drives users into the paste → review → preview flow with minimal friction. Brand: Zyvi. Tagline: “Tailor your CV to pass the filter.”
 
 ---
 
@@ -19,21 +19,23 @@ A focused landing page that clearly communicates value, builds trust, and drives
 
 1. Hero
    - Headline: “Tailor your CV to any job ad — in minutes”
-   - Sub‑headline: “ATS‑friendly and recruiter‑ready. Free preview, €/$0.99 to download.”
+   - Sub‑headline: “Zyvi parses your CV + job ad to pass ATS filters. First tailored CV free; subscribe for more.”
    - CTA buttons: “Try free preview” (primary), “See sample CV + letter” (secondary)
-   - Trust badges (lightweight): “ATS‑friendly”, “No signup to preview”, “Privacy‑first”
+   - Trust badges (lightweight): “ATS‑friendly”, “First CV free”, “No signup to preview”, “Privacy‑first”
 2. How It Works (3 steps)
-   - Paste your CV + job ad → Review suggested edits by section → Preview cover letter + pay €/$0.99 for a pro PDF
+   - Paste your CV + job ad → Review suggested edits by section → Download your first tailored CV free; subscribe for ongoing exports
 3. Why It Works (value props)
    - ATS‑friendly: Clean, single column, consistent headings/dates, keyword‑aware
+   - Aligned: Zyvi parses and aligns keywords to the job ad; keeps ATS parsable
    - Control: Approve/reject section edits; no new facts added
    - Quality: PDF formatted for clarity; includes a concise 3‑paragraph cover letter
 4. Sample Snippet
    - Show a mock Summary + first Experience entry (watermarked) to set expectations
 5. Pricing
-   - Simple: “€/$0.99 per export — includes CV PDF and cover letter. No subscriptions.”
+   - Simple: “First tailored CV free (one job). Subscription required for additional tailored CVs. Tiers: Free, Plus, Pro (details TBD).”
+   - Draft inclusions (TBD numbers): Free = 1 tailored CV + cover letter; Plus = multiple tailored CVs/month + saved profile; Pro = higher limits/unlimited (fair use) + priority rendering.
 6. FAQ
-   - Why pay? “We cover AI costs and deliver a polished PDF.”
+   - Why subscribe after the free CV? “Subscriptions cover ongoing tailored CVs and cover letters across multiple job ads.”
    - Will you invent skills? “No. We only rephrase/reorder what you provide.”
    - Is my data safe? “We don’t require accounts for preview; we store minimal data.”
    - Languages? “English only in v0.”
@@ -45,10 +47,11 @@ A focused landing page that clearly communicates value, builds trust, and drives
 ## Draft Copy
 
 - Hero Headline: “Tailor your CV to any job ad — in minutes”
-- Sub‑headline: “ATS‑friendly and recruiter‑ready. Free preview, €/$0.99 to download.”
+- Sub‑headline: “Zyvi parses your CV + job ad to pass ATS filters. First tailored CV free; subscribe for more.”
 - Primary CTA: “Try free preview”
 - Value bullets:
   - “ATS‑friendly formatting — single column, clear headings, consistent dates”
+  - “Keyword-aligned — Zyvi parses job ads to highlight the right terms”
   - “Keep control — approve/reject edits per section”
   - “No made‑up claims — we only use what’s in your CV”
   - “Includes a concise cover letter tailored to the same job ad”
@@ -60,8 +63,8 @@ A focused landing page that clearly communicates value, builds trust, and drives
 
 ## SEO & Sharing
 
-- Title: “ATS‑Friendly CV Tailor — Free Preview, €/$0.99 PDF”
-- Meta description: “Paste your CV and a job ad. Review suggested edits by section. Get an ATS‑friendly PDF CV and a cover letter for just €/$0.99.”
+- Title: “Zyvi — Tailor your CV to pass the filter | First CV Free”
+- Meta description: “Zyvi parses your CV and a job ad, aligns sections to pass ATS filters, and delivers your first tailored CV + cover letter free. Subscribe for ongoing exports.”
 - Keywords: ats resume, tailored cv, job ad resume, resume keywords, resume pdf
 - Open Graph: image preview of sample snippet (static asset), og:title/description per above.
 
@@ -89,4 +92,3 @@ A focused landing page that clearly communicates value, builds trust, and drives
 ## Out of Scope (Landing v0)
 
 - Blog, longform SEO content, testimonials, complex pricing tables, localization.
-

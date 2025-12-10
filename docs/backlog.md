@@ -28,7 +28,7 @@ This backlog captures the MVP tickets for the job‑seeker CV tailoring product.
 
 3) LP: Pricing + FAQ + Footer
 - Labels: LP, frontend
-- Acceptance: Pricing text (€/$0.99), FAQs, footer links (Privacy/Terms/Contact).
+- Acceptance: Pricing text with “first CV free” + subscription tiers (Free/Plus/Pro placeholders), FAQs, footer links (Privacy/Terms/Contact).
 
 4) LP: SEO + OG
 - Labels: LP, seo
@@ -52,7 +52,7 @@ This backlog captures the MVP tickets for the job‑seeker CV tailoring product.
 
 9) UI: Preview Page
 - Labels: UI, frontend
-- Acceptance: Show full cover letter text; show CV snippet (Summary + top Experience); CTA to pay.
+- Acceptance: Show full cover letter text; show CV snippet (Summary + top Experience); CTA to download free first CV; upgrade CTA for additional exports.
 
 10) Core: LLM — Job Ad Parsing
 - Labels: core, llm
@@ -70,9 +70,9 @@ This backlog captures the MVP tickets for the job‑seeker CV tailoring product.
 - Labels: cv, pdf
 - Acceptance: Single-column, consistent headings/dates/bullets; up to 2 pages; render to PDF from YAML.
 
-14) Payments: Stripe Checkout
+14) Payments: Subscription Checkout
 - Labels: payments
-- Acceptance: Create Checkout session for 0.99; success/cancel handling; webhook secret configured.
+- Acceptance: Enforce “first CV free”; require subscription checkout for additional exports; success/cancel handling; webhook secret configured.
 
 15) Payments: Webhook Fulfillment
 - Labels: payments, backend
@@ -104,4 +104,3 @@ This backlog captures the MVP tickets for the job‑seeker CV tailoring product.
 - Language: English-only outputs in v0.
 - No inline editing; no regeneration loop.
 - Cover letter is free to copy; PDF behind paywall.
-
